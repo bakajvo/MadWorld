@@ -1,0 +1,31 @@
+{
+  "name": "madworld",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "copyfiles -f static/*.* www/ && parcel madworld/*.html --out-dir www",
+    "start_no_map": "copyfiles -f static/*.* www/ && parcel madworld/*.html --out-dir www --no-source-maps",
+    "deploy": "copyfiles -f static/*.* dist/ && parcel build madworld/*.html --no-source-maps"
+  },
+  "devDependencies": {
+    "@types/pixi.js": "^4.7.1",
+    "parcel-bundler": "1.10.0",
+    "parcel-plugin-json-url-loader": "^0.1.1",
+    "pixi.js": "^4.7.3",
+    "typescript": "^3.1.1"
+  },
+  "dependencies": {
+    "copyfiles": "^2.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bakajvo/MadWorld.git"
+  },
+  "author": "Vojtěch Bakaj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bakajvo/MadWorld/issues"
+  },
+  "homepage": "https://github.com/bakajvo/MadWorld#readme"
+}
